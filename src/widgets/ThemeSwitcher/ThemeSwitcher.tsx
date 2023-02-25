@@ -2,7 +2,7 @@ import { Theme, useTheme } from 'app/providers/ThemeProvider';
 import { classNames } from 'shared/lib/classNames/classNames';
 import LightIcon from 'shared/assets/icons/theme-light.svg';
 import DarkIcon from 'shared/assets/icons/theme-dark.svg';
-import { Button, VariantButton } from '../../shared/ui/Button/Button';
+import { Button, ButtonVariant } from '../../shared/ui/Button/Button';
 
 interface ThemeSwitcherProp {
   className?: string;
@@ -13,7 +13,7 @@ export const ThemeSwitcher = ({ className }: ThemeSwitcherProp) => {
 
   return (
     <Button
-      variant={VariantButton.CLEAR}
+      variant={ButtonVariant.CLEAR}
       onClick={toggleTheme}
       className={classNames('', {}, [className])}
     >
