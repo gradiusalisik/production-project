@@ -1,3 +1,4 @@
+import { useTheme } from 'app/providers/ThemeProvider';
 import {
   ReactNode, MouseEvent, useEffect, useCallback,
 } from 'react';
