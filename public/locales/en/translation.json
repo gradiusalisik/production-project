@@ -5,5 +5,11 @@
   "Страница не найдена": "Page not found",
   "Произошла непредвиденная ошибка": "An unexpected error has occurred",
   "Обновить страницу": "Update page",
-  "Переключить": "Toggle"
+  "Главная": "Main",
+  "О сайте": "About",
+  "Переключить": "Toggle",
+  "Короткий язык": "En",
+  "Войти": "Login",
+  "increment": "Increment",
+  "decrement": "Decrement"
 }
