@@ -28,6 +28,7 @@ export const AppLink: FC<AppLinkProps> = (props) => {
       className={classNames(cls.appLink, {}, [className, cls[theme]])}
       {...otherProps}
     >
+      <div className={cls.appLink_header}>hello</div>
       {children}
     </Link>
   );

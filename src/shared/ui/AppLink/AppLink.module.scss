@@ -1,5 +1,9 @@
 .appLink {
   color: var(--primary-color);
+
+  &_header {
+    display: none;
+  }
 }
 
 .primary {
