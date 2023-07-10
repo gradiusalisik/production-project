@@ -31,24 +31,6 @@
   flex-direction: column;
 }
 
-.item {
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-  min-height: 24px;
-}
-
-.link {
-  margin-left: 10px;
-  white-space: nowrap;
-  transition: opacity 0.2s;
-}
-
-.icon {
-  flex-shrink: 0;
-  fill: var(--inverted-primary-color);
-}
-
 .collapsed {
   // TODO: refactor
   width: var(--sidebar-width-collapsed);
