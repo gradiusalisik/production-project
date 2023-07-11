@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes, FC } from 'react';
-import { classNames } from 'shared/lib/classNames/classNames';
+import { Mods, classNames } from 'shared/lib/classNames/classNames';
 import cls from './Button.module.scss';
 
 export enum ButtonVariant {
@@ -28,14 +28,14 @@ export const Button: FC<ButtonProps> = (props) => {
   const {
     className,
     children,
-    variant,
+    variant = ButtonVariant.OUTLINE,
     square,
     disabled,
     size = ButtonSize.M,
     ...rest
   } = props;
 
-  const mods: Record<string, boolean> = {
+  const mods: Mods = {
     [cls[variant]]: true,
     [cls.square]: square,
     [cls[size]]: !!size,
