@@ -30,10 +30,10 @@ export function buildPlugins({
       __API_URL__: JSON.stringify(apiUrl),
       __PROJECT__: JSON.stringify(project),
     }),
-    new ReactRefreshWebpackPlugin({ overlay: false }),
   ];
 
   if (isDev) {
+    plugins.push(new ReactRefreshWebpackPlugin({ overlay: false }));
     plugins.push(new HotModuleReplacementPlugin());
     plugins.push(
       new BundleAnalyzerPlugin({
