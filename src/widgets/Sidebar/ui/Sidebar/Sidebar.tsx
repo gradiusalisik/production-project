@@ -5,8 +5,6 @@ import { LangSwitcher } from 'widgets/LangSwitcher/LangSwitcher';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher/ThemeSwitcher';
 
 import { SIDEBAR_ITEMS_LIST } from 'widgets/Sidebar/model/items';
-import { useSelector } from 'react-redux';
-import { getUserAuthData } from 'entities/User';
 import cls from './Sidebar.module.scss';
 import { SidebarItem } from '../SidebarItem/SidebarItem';
 
