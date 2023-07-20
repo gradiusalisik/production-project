@@ -11,10 +11,10 @@ export {
 
 export {
   fetchProfileData,
-} from './model/service/fetchProfileData/fetchProfileData';
+} from './model/services/fetchProfileData/fetchProfileData';
 export {
   updateProfileData,
-} from './model/service/updateProfileData/updateProfileData';
+} from './model/services/updateProfileData/updateProfileData';
 
 export {
   ProfileCard,
