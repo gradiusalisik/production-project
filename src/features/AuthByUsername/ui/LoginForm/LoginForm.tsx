@@ -2,7 +2,7 @@ import { loginByUsername } from 'features/AuthByUsername/model/services/loginByU
 import {
   loginActions,
   loginReducer,
-} from 'features/AuthByUsername/model/slice/loginSlice';
+} from 'features/AuthByUsername/model/slices/loginSlice';
 import { memo, useCallback, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';

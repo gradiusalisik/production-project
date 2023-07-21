@@ -1,8 +1,8 @@
 import { Story } from '@storybook/react';
 import { StateSchema, StoreProvider } from 'app/providers/StoreProvider';
-import { articleDetailsReducer } from 'entities/Articles/model/slice/articleDetailsSlice';
+import { articleDetailsReducer } from 'entities/Articles/model/slices/articleDetailsSlice';
 import { profileReducer } from 'entities/Profile';
-import { loginReducer } from 'features/AuthByUsername/model/slice/loginSlice';
+import { loginReducer } from 'features/AuthByUsername/model/slices/loginSlice';
 import { ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 
 const defaultAsyncReducers: ReducersList = {
