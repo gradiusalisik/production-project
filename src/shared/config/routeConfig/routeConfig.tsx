@@ -8,23 +8,23 @@ import { RouteProps } from 'react-router-dom';
 
 export type AppRouteProps = RouteProps & {
   authOnly?: boolean;
-}
+};
 
 export enum AppRoutes {
   MAIN = 'main',
   ABOUT = 'about',
   PROFILE = 'profile',
   ARTICLES = 'articles',
-  ARTICLE_DETAILS='article_details',
+  ARTICLE_DETAILS = 'article_details',
 
   // last
-  NOT_FOUND = 'not_found'
+  NOT_FOUND = 'not_found',
 }
 
 export const RoutePath: Record<AppRoutes, string> = {
   [AppRoutes.MAIN]: '/',
   [AppRoutes.ABOUT]: '/about',
-  [AppRoutes.PROFILE]: '/profile',
+  [AppRoutes.PROFILE]: '/profile/', // + id
   [AppRoutes.ARTICLES]: '/articles',
   [AppRoutes.ARTICLE_DETAILS]: '/articles/', // + id
 
@@ -42,7 +42,7 @@ export const routeConfig: Record<AppRoutes, AppRouteProps> = {
     element: <AboutPage />,
   },
   [AppRoutes.PROFILE]: {
-    path: RoutePath[AppRoutes.PROFILE],
+    path: `${RoutePath[AppRoutes.PROFILE]}:id`,
     element: <ProfilePage />,
     authOnly: true,
   },

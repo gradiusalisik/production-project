@@ -19,7 +19,9 @@
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
       "views": 1022,
       "createdAt": "26.02.2022",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -100,6 +102,18 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "123",
+      "id": "e4n8zqj"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "hello world",
+      "id": "ti4HVPN"
     }
   ],
   "users": [
@@ -115,17 +129,31 @@
       "username": "user",
       "password": "123",
       "role": "USER",
-      "avatar": "https://i.computer-bild.de/imgs/1/3/1/3/5/3/0/1/Ransomware-Angriff-2048x1152-2df7bebedf985421.jpg"
+      "avatar": "https://f6h8q2y9.stackpathcdn.com/wp-content/uploads/2019/11/hacker.jpg"
     }
   ],
-  "profile": {
-    "first": "jgh",
-    "lastname": "asf",
-    "age": 465,
-    "currency": "RUB",
-    "country": "Belarus",
-    "city": "Moscow",
-    "username": "admin213",
-    "avatar": "https://i.computer-bild.de/imgs/1/3/1/3/5/3/0/1/Ransomware-Angriff-2048x1152-2df7bebedf985421.jpg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "jgh",
+      "lastname": "asf",
+      "age": 465,
+      "currency": "RUB",
+      "country": "Belarus",
+      "city": "Moscow",
+      "username": "admin213",
+      "avatar": "https://i.computer-bild.de/imgs/1/3/1/3/5/3/0/1/Ransomware-Angriff-2048x1152-2df7bebedf985421.jpg"
+    },
+    {
+      "id": "2",
+      "first": "jgh",
+      "lastname": "asf",
+      "age": 25,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "grad",
+      "avatar": "https://f6h8q2y9.stackpathcdn.com/wp-content/uploads/2019/11/hacker.jpg"
+    }
+  ]
 }
