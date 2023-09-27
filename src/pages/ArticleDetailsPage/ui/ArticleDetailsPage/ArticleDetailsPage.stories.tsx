@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
-import { ArticleBlockType, ArticleType } from 'entities/Articles/model/types/article';
+import { Article, ArticleBlockType, ArticleType } from 'entities/Articles/model/types/article';
 import ArticleDetailsPage from './ArticleDetailsPage';
 
 export default {
@@ -12,7 +12,7 @@ export default {
   },
 } as ComponentMeta<typeof ArticleDetailsPage>;
 
-const article = {
+const article: Article = {
   id: '1',
   title: 'Javascript news',
   subtitle: 'Что нового в JS за 2022 год?',
@@ -20,6 +20,10 @@ const article = {
   views: 1022,
   createdAt: '26.02.2022',
   type: [ArticleType.IT],
+  user: {
+    id: '1',
+    username: 'Grad',
+  },
   blocks: [
     {
       id: '1',

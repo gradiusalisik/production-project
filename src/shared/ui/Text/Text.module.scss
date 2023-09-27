@@ -47,3 +47,12 @@
     font: var(--font-l);
   }
 }
+
+.ellipsis {
+  .title,
+  .text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

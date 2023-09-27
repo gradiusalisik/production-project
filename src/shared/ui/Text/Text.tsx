@@ -25,6 +25,7 @@ export interface TextProps {
   theme?: TextTheme;
   align?: TextAlign;
   size?: TextSize;
+  ellipsis?: boolean;
 }
 
 export const Text = memo((props: TextProps) => {
@@ -35,12 +36,14 @@ export const Text = memo((props: TextProps) => {
     align = TextAlign.LEFT,
     theme = TextTheme.PRIMARY,
     size = TextSize.M,
+    ellipsis,
   } = props;
 
   const mods: Mods = {
     [cls[theme]]: true,
     [cls[align]]: true,
     [cls[size]]: true,
+    [cls.ellipsis]: ellipsis,
   };
 
   return (
